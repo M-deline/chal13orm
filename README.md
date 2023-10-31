@@ -1,10 +1,12 @@
 # E Commerce Back End
 ## Overview 
 ## Challenges & Successes
+- Sequelize and MySQL
+    - Big shoutout to the TA's at my bootcamp. I was having trouble getting sequelize to connect and then I was locked out of MySQL. George and Kirtley helped me uninstall MySQL and then redownload it and change the password. Once that was changed they helped me get the database back for this challenge by running 'source' in mysql in the terminal. 
 ## Technologies Used
 ## Installation 
 ## Credits 
-- 
+- George Yoo and Kirtley (TA's in University of Denver BootCamp) specifically with the connection.js, server.js and database. I was struggling with sequelize to connect to the server and they helped me so much to get it to work properly.
 - 
 -
 
