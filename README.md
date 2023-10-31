@@ -7,7 +7,7 @@
 ## Installation 
 ## Credits 
 - George Yoo and Kirtley (TA's in University of Denver BootCamp) specifically with the connection.js, server.js and database. I was struggling with sequelize to connect to the server and they helped me so much to get it to work properly.
-- 
+- https://macpaw.com/how-to/uninstall-mysql-on-mac
 -
 
 <!-- GIVEN a functional Express.js API
