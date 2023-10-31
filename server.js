@@ -1,14 +1,24 @@
 const express = require('express');
 const routes = require('./routes');
 
-// const db = new sequelize("ecommerce_db", "root", "password", {
-//   host: "localhost",
-//   dialect: "mysql",
+// var mysql = require('mysql2');
 
-//   })
+// var connection = mysql.createConnection({
+//   host:'localhost',
+//   user:'root',
+//   password:'1',
+//   database:'ecommerce_db'
 
-// db.sync({})
-// module.exports = db
+// });
+// connection.connect(function(error){
+//   if(error){
+//       console.log(error);
+//   }else{
+//       console.log('Connected');
+//   }
+// });
+
+
 const sequelize = require('./config/connection');
 // import sequelize connection
 
@@ -21,9 +31,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 // sync sequelize models to the database, then turn on the server
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}!`);
-});
+// app.listen(PORT, () => {
+//   console.log(`App listening on port ${PORT}!`);
+// });
 
 
 sequelize.sync({ force: false }).then(() => {
