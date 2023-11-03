@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
-  Category.findbyPk(req.params.id, {
+  Category.findByPk(req.params.id, {
     include: [Product]
   }).then(dbCategoryData => {
     if (!dbCategoryData) {
@@ -78,4 +78,5 @@ router.delete('/:id', (req, res) => {
       res.status(500).json(err);
     });
 });
+//cascade 
 module.exports = router;
